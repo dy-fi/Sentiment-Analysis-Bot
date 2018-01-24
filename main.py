@@ -14,9 +14,7 @@ Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.
 
 '''
 
-reddit = praw.Reddit(client_id='suTofAZW044xpQ',
-                     client_secret="dbdHy3rsCXOgQkL147A7D0KuhHI",
-                     user_agent='Hail Corporate Bot')
+reddit = praw.Reddit( #client id, secret, agent)
 
 
 top100 = reddit.subreddit('all').hot(limit=100)
